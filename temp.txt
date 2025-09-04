@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>بورتفوليو | اسمك هنا</title>
+
+    <!-- الخطوط -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- ملف CSS خارجي -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- ناف بار -->
+    <nav class="nav">
+      <div class="container nav-inner">
+        <div class="brand">
+          <span class="logo" aria-hidden="true"></span>
+          <span>اسمك هنا</span>
+        </div>
+        <div class="nav-links">
+          <a href="#about">عنّي</a>
+          <a href="#projects">المشاريع</a>
+          <a href="#skills">المهارات</a>
+          <a href="#contact">تواصل</a>
+        </div>
+        <a class="cta-btn" href="#contact">توظيفي</a>
+      </div>
+    </nav>
+
+    <!-- هيرو -->
+    <header class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>مصمم/مطور واجهات أمامية — أصنع مواقع سريعة وجميلة</h1>
+          <p>أنا <b>فلان الفلاني</b> مطوّر واجهات أمامية بخبرة في HTML/CSS/JS وأطر العمل الحديثة. أحب بناء منتجات رقمية تركّز على الأداء وتجربة المستخدم.</p>
+          <div class="chip-row">
+            <span class="chip">#UI/UX</span>
+            <span class="chip">#Frontend</span>
+            <span class="chip">#Responsive</span>
+            <span class="chip">#Accessibility</span>
+          </div>
+          <div class="actions">
+            <a class="btn primary" href="#projects">شوف أعمالي</a>
+            <a class="btn" href="#contact">راسلني</a>
+            <a class="btn" href="cv.pdf" download>حمّل السيرة</a>
+          </div>
+        </div>
+        <div>
+          <div class="card" style="display:flex; align-items:center; justify-content:center; padding:20px;">
+            <div class="avatar">
+              <!-- ضع صورتك هنا -->
+              <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=400&auto=format&fit=crop" alt="صورة شخصية" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- المهارات -->
+      <section id="skills">
+        <div class="section-head">
+          <h2>المهارات</h2>
+          <span class="muted">أدواتي وتقنياتي الأساسية</span>
+        </div>
+        <div class="skills">
+          <div class="skill"><b>HTML5</b><small>Semantic</small></div>
+          <div class="skill"><b>CSS3</b><small>Grid/Flex</small></div>
+          <div class="skill"><b>Sass</b><small>Modules</small></div>
+          <div class="skill"><b>JavaScript</b><small>ES6+</small></div>
+          <div class="skill"><b>React</b><small>Hooks</small></div>
+          <div class="skill"><b>Next.js</b><small>App Router</small></div>
+          <div class="skill"><b>Tailwind</b><small>Utility</small></div>
+          <div class="skill"><b>Git</b><small>Workflow</small></div>
+          <div class="skill"><b>Figma</b><small>Design</small></div>
+          <div class="skill"><b>Accessibility</b><small>WCAG</small></div>
+          <div class="skill"><b>Performance</b><small>Core Web Vitals</small></div>
+          <div class="skill"><b>Testing</b><small>Jest/RTL</small></div>
+        </div>
+      </section>
+
+      <!-- المشاريع -->
+      <section id="projects">
+        <div class="section-head">
+          <h2>مشاريع مختارة</h2>
+          <a class="muted" href="#">شوف الكل →</a>
+        </div>
+        <div class="projects">
+          <!-- مشروع 1 -->
+          <article class="project card">
+            <a class="thumb" href="#" aria-label="مشاهدة المشروع 1"></a>
+            <div class="content">
+              <h3>لوحة تحكّم Analytics</h3>
+              <p class="muted">تصميم وتطوير لوحة تحكّم تفاعلية تعرض مؤشرات الأداء مع دعم الوضع الداكن.</p>
+              <div class="tags">
+                <span class="tag">React</span>
+                <span class="tag">Recharts</span>
+                <span class="tag">CSS Grid</span>
+              </div>
+            </div>
+          </article>
+          <!-- مشروع 2 -->
+          <article class="project card">
+            <a class="thumb" href="#"></a>
+            <div class="content">
+              <h3>موقع تعريفي Startup</h3>
+              <p class="muted">موقع تسويقي سريع مع تحسين SEO ونتيجة Lighthouse مرتفعة.</p>
+              <div class="tags">
+                <span class="tag">Next.js</span>
+                <span class="tag">SEO</span>
+                <span class="tag">Vercel</span>
+              </div>
+            </div>
+          </article>
+          <!-- مشروع 3 -->
+          <article class="project card">
+            <a class="thumb" href="#"></a>
+            <div class="content">
+              <h3>متجر إلكتروني بسيط</h3>
+              <p class="muted">قائمة منتجات مع سلة مشتريات وتجربة استخدام سلسة على الجوال.</p>
+              <div class="tags">
+                <span class="tag">Vanilla JS</span>
+                <span class="tag">Stripe</span>
+                <span class="tag">ARIA</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- الخبرات / الشهادات -->
+      <section id="about">
+        <div class="section-head">
+          <h2>الخبرات والشهادات</h2>
+          <span class="muted">ما الذي أنجزته</span>
+        </div>
+        <div class="timeline">
+          <div class="item">
+            <div>
+              <b>Front-End Developer — شركة X</b>
+              <div class="muted">بناء مكوّنات UI قابلة لإعادة الاستخدام وتحسين الأداء</div>
+            </div>
+            <time>2023 — الآن</time>
+          </div>
+          <div class="item">
+            <div>
+              <b>UI Designer — وكالة Y</b>
+              <div class="muted">تصميم نظم تصميم وتوثيقها</div>
+            </div>
+            <time>2021 — 2023</time>
+          </div>
+          <div class="item">
+            <div>
+              <b>شهادة Google UX</b>
+              <div class="muted">أساسيات البحث والتصميم المتمحور حول المستخدم</div>
+            </div>
+            <time>2021</time>
+          </div>
+        </div>
+      </section>
+
+      <!-- تواصل -->
+      <section id="contact">
+        <div class="section-head">
+          <h2>تواصل معي</h2>
+          <span class="muted">دعنا نعمل سويًا</span>
+        </div>
+        <div class="contact">
+          <div class="card">
+            <div class="grid">
+              <div class="field">
+                <label for="name">الاسم</label>
+                <input id="name" type="text" placeholder="اسمك" />
+              </div>
+              <div class="field">
+                <label for="email">البريد</label>
+                <input id="email" type="email" placeholder="example@mail.com" />
+              </div>
+              <div class="field" style="grid-column: 1 / -1;">
+                <label for="message">رسالتك</label>
+                <textarea id="message" placeholder="كيف أقدر أساعدك؟"></textarea>
+              </div>
+            </div>
+            <div style="margin-top:12px; display:flex; gap:10px;">
+              <button class="btn primary" type="button">إرسال</button>
+              <a class="btn" href="mailto:you@email.com">راسلني بالبريد</a>
+            </div>
+          </div>
+          <div class="card">
+            <h3 style="margin-top:0;">معلومات التواصل</h3>
+            <p class="muted">متاح للعمل الحر والتوظيف بدوام كامل.</p>
+            <ul style="list-style:none; padding:0; margin:0; display:grid; gap:8px;">
+              <li>📧 you@email.com</li>
+              <li>🔗 github.com/yourhandle</li>
+              <li>💼 linkedin.com/in/yourhandle</li>
+              <li>📍 القاهرة، مصر</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <footer class="container">
+        <div style="display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap;">
+          <small>© <span id="year"></span> اسمك هنا. كل الحقوق محفوظة.</small>
+          <small class="muted">مصمم ومطوّر بحب 💙</small>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      // تحديث السنة تلقائيًا
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
