@@ -1,194 +1,282 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>بورتفوليو | مصعب محمد سيد</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <title>John Doe - Web Developer Portfolio</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <!-- ناف بار -->
-    <nav class="nav">
-      <div class="container nav-inner">
-        <div class="brand">
-          <span class="logo" aria-hidden="true"></span>
-          <span>مصعب محمد سيد</span>
-        </div>
-        <div class="nav-links">
-          <a href="#about">عنّي</a>
-          <a href="#projects">المشاريع</a>
-          <a href="#skills">المهارات</a>
-          <a href="#contact">تواصل</a>
-        </div>
-        <a class="cta-btn" href="#contact">توظيفي</a>
-      </div>
-    </nav>
-
-    <!-- هيرو -->
-    <header class="hero">
-      <div class="container hero-grid">
-        <div>
-          <h1>مطور تطبيقات Flutter</h1>
-          <p>
-            أنا <b>مصعب محمد سيد</b> مطور تطبيقات موبايل بخبرة في
-            <b>Flutter</b> و<b>Dart</b> وبدرس هندسة الحاسبات والنظم بجامعة حلوان
-            (تخصص: الأمن السيبراني).
-          </p>
-          <div class="chip-row">
-            <span class="chip">#Flutter</span>
-            <span class="chip">#Dart</span>
-            <span class="chip">#MobileDev</span>
-            <span class="chip">#Cybersecurity</span>
-          </div>
-          <div class="actions">
-            <a class="btn primary" href="#projects">شوف مشاريعي</a>
-            <a class="btn" href="#contact">راسلني</a>
-            <a class="btn" href="cv.pdf" download>حمّل السيرة الذاتية</a>
-          </div>
-        </div>
-        <div>
-          <div
-            class="card"
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              padding: 20px;
-            "
-          >
-            <div class="avatar">
-              <img
-                src="https://avatars.githubusercontent.com/u/1?v=4"
-                alt="صورة شخصية"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+    <header>
+      <nav class="container">
+        <a href="#" class="logo">John Doe</a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="mobile-menu" id="mobileMenu">☰</button>
+      </nav>
     </header>
 
-    <main class="container">
-      <!-- المهارات -->
-      <section id="skills">
-        <div class="section-head">
-          <h2>المهارات</h2>
-          <span class="muted">أدواتي وتقنياتي</span>
-        </div>
-        <div class="skills">
-          <div class="skill"><b>Dart</b><small>OOP</small></div>
-          <div class="skill"><b>Flutter</b><small>UI/State</small></div>
-          <div class="skill"><b>Java</b><small>Swing</small></div>
-          <div class="skill"><b>Python</b><small>Scripting</small></div>
-          <div class="skill"><b>MySQL</b><small>Database</small></div>
-          <div class="skill"><b>C & C++</b><small>Data Structure</small></div>
+    <main>
+      <section id="home" class="hero">
+        <div class="container">
+          <h1>Hi, I'm John Doe</h1>
+          <p>Full-Stack Web Developer & UI/UX Designer</p>
+          <a href="#projects" class="btn">View My Work</a>
         </div>
       </section>
 
-      <!-- المشاريع -->
-      <section id="projects">
-        <div class="section-head">
-          <h2>المشاريع</h2>
-        </div>
-        <div class="projects">
-          <article class="project card">
-            <div class="content">
-              <h3>Restaurant App</h3>
-              <p class="muted">
-                تطبيق مطعم يسمح للمستخدمين بتصفح القوائم وطلب الطعام.
-              </p>
-              <div class="tags">
-                <span class="tag">Flutter</span>
-                <span class="tag">Dart</span>
-                <span class="tag">Hive</span>
+      <section id="about">
+        <div class="container">
+          <div class="content-section fade-in">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+              <img
+                src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'><circle cx='150' cy='150' r='150' fill='%23667eea'/><circle cx='150' cy='120' r='50' fill='white'/><path d='M75 225 Q150 175 225 225 L225 300 L75 300 Z' fill='white'/></svg>"
+                alt="Profile Picture"
+                class="profile-img"
+              />
+              <div class="about-text">
+                <p>
+                  I'm a passionate web developer with over 3 years of experience
+                  creating beautiful, functional, and user-centered digital
+                  experiences. I love combining the technical and creative
+                  aspects of web development to build applications that not only
+                  work flawlessly but also provide an engaging user experience.
+                </p>
+                <p>
+                  My expertise spans across front-end and back-end development,
+                  with a strong focus on modern JavaScript frameworks,
+                  responsive design, and performance optimization. I'm
+                  constantly learning new technologies and staying up-to-date
+                  with the latest industry trends.
+                </p>
+                <p>
+                  When I'm not coding, you can find me exploring new design
+                  trends, contributing to open-source projects, or sharing my
+                  knowledge through blog posts and community talks.
+                </p>
               </div>
-              <a
-                href="https://github.com/MosabMohamed0/Foodgo.git"
-                target="_blank"
-                >🔗 GitHub</a
-              >
             </div>
-          </article>
-          <article class="project card">
-            <div class="content">
-              <h3>LinkedIn Simulation</h3>
-              <p class="muted">محاكاة لتطبيق LinkedIn بملفات شخصية ووظائف.</p>
-              <div class="tags">
-                <span class="tag">Flutter</span>
-                <span class="tag">Dart</span>
-              </div>
-              <a
-                href="https://github.com/MosabMohamed0/LinkedIn-App-Simulation.git"
-                target="_blank"
-                >🔗 GitHub</a
-              >
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- تواصل -->
-      <section id="contact">
-        <div class="section-head">
-          <h2>تواصل معي</h2>
-        </div>
-        <div class="contact">
-          <div class="card">
-            <h3>معلومات التواصل</h3>
-            <ul
-              style="
-                list-style: none;
-                padding: 0;
-                margin: 0;
-                display: grid;
-                gap: 8px;
-              "
-            >
-              <li>📧 mosabthezaafan@gmail.com</li>
-              <li>📱 01156080813</li>
-              <li>
-                🔗
-                <a href="https://github.com/MosabMohamed0" target="_blank"
-                  >GitHub</a
-                >
-              </li>
-              <li>
-                💼
-                <a
-                  href="https://www.linkedin.com/in/mosab-mohamed-551b0724b/"
-                  target="_blank"
-                  >LinkedIn</a
-                >
-              </li>
-              <li>📍 حلوان، القاهرة</li>
-            </ul>
           </div>
         </div>
       </section>
 
-      <footer class="container">
-        <div
-          style="
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 10px;
-            flex-wrap: wrap;
-          "
-        >
-          <small>© <span id="year"></span> مصعب محمد سيد</small>
-          <small class="muted">مطور ب Flutter 💙</small>
+      <section id="skills">
+        <div class="container">
+          <div class="content-section fade-in">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+              <div class="skill-category">
+                <h3>Frontend Development</h3>
+                <div class="skill-item">
+                  <span>HTML5 & CSS3</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 95%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span>JavaScript (ES6+)</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span>React.js</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span>Vue.js</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 80%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h3>Backend Development</h3>
+                <div class="skill-item">
+                  <span>Node.js</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span>Python</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 80%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span>Express.js</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span>MongoDB</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 75%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h3>Tools & Others</h3>
+                <div class="skill-item">
+                  <span>Git & GitHub</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span>Figma</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span>AWS</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 70%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span>Docker</span>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 75%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </footer>
+      </section>
+
+      <section id="projects">
+        <div class="container">
+          <div class="content-section fade-in">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+              <div class="project-card">
+                <div class="project-image">E-Commerce Platform</div>
+                <div class="project-content">
+                  <h3>E-Commerce Platform</h3>
+                  <p>
+                    A full-stack e-commerce solution built with React, Node.js,
+                    and MongoDB. Features include user authentication, product
+                    catalog, shopping cart, and payment integration.
+                  </p>
+                  <div class="project-links">
+                    <a href="#" class="project-link">Live Demo</a>
+                    <a href="#" class="project-link">GitHub</a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="project-image">Task Management App</div>
+                <div class="project-content">
+                  <h3>Task Management App</h3>
+                  <p>
+                    A collaborative task management application with real-time
+                    updates, drag-and-drop functionality, and team collaboration
+                    features. Built with Vue.js and Firebase.
+                  </p>
+                  <div class="project-links">
+                    <a href="#" class="project-link">Live Demo</a>
+                    <a href="#" class="project-link">GitHub</a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="project-image">Weather Dashboard</div>
+                <div class="project-content">
+                  <h3>Weather Dashboard</h3>
+                  <p>
+                    A responsive weather application that provides current
+                    weather conditions and forecasts. Features location-based
+                    weather data and beautiful data visualizations.
+                  </p>
+                  <div class="project-links">
+                    <a href="#" class="project-link">Live Demo</a>
+                    <a href="#" class="project-link">GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <div class="content-section fade-in">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+              <div class="contact-info">
+                <h3>Contact Information</h3>
+                <div class="contact-item">
+                  <strong>Email:</strong>
+                  <span>john.doe@email.com</span>
+                </div>
+                <div class="contact-item">
+                  <strong>Phone:</strong>
+                  <span>+1 (555) 123-4567</span>
+                </div>
+                <div class="contact-item">
+                  <strong>Location:</strong>
+                  <span>New York, NY</span>
+                </div>
+                <div class="contact-item">
+                  <strong>LinkedIn:</strong>
+                  <span>/in/johndoe</span>
+                </div>
+              </div>
+              <form class="contact-form" id="contactForm">
+                <div id="messageContainer"></div>
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    required
+                    placeholder="Tell me about your project or just say hello!"
+                  ></textarea>
+                </div>
+                <button type="submit" class="submit-btn" id="submitBtn">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+    <footer>
+      <div class="container">
+        <div class="social-links">
+          <a href="#" class="social-link">📧</a>
+          <a href="#" class="social-link">💼</a>
+          <a href="#" class="social-link">🐙</a>
+          <a href="#" class="social-link">🐦</a>
+        </div>
+        <p>&copy; 2025 John Doe. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
