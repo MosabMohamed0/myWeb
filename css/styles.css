@@ -197,19 +197,16 @@ section {
   align-items: center;
 }
 
-.profile-placeholder {
-  width: 300px;
-  height: 300px;
+/* صورة شخصية */
+.profile-img {
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin: 0 auto;
+  object-fit: cover; /* تخلي الصورة مظبوطة جوه الدائرة */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   animation: float 3s ease-in-out infinite;
+  display: block;
+  margin: 0 auto;
 }
 
 .about-text {
@@ -382,6 +379,50 @@ section {
 .project-links {
   display: flex;
   gap: 1rem;
+}
+
+/* Education & Leadership Sections */
+.education,
+.leadership {
+  background: white;
+  padding: 4rem 0;
+}
+
+.education-content,
+.leadership-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.education-card,
+.leadership-card {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover,
+.leadership-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+}
+
+.education-card h4,
+.leadership-card h4 {
+  font-size: 1.3rem;
+  color: #2563eb;
+  margin-bottom: 1rem;
+}
+
+.education-card p,
+.leadership-card p {
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
 }
 
 /* Contact Section */
@@ -592,9 +633,9 @@ section {
     text-align: center;
   }
 
-  .profile-placeholder {
-    width: 250px;
-    height: 250px;
+  .profile-img {
+    width: 200px;
+    height: 200px;
   }
 
   .about-stats {
@@ -613,11 +654,10 @@ section {
     text-align: center;
   }
 
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .skills-grid {
+  .projects-grid,
+  .skills-grid,
+  .education-content,
+  .leadership-content {
     grid-template-columns: 1fr;
   }
 }
