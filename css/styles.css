@@ -49,7 +49,7 @@ body {
 .nav-list {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .nav-link {
@@ -423,6 +423,48 @@ section {
   line-height: 1.6;
   margin-bottom: 0.5rem;
   font-size: 1rem;
+}
+
+.services {
+  background: #f9fafb; /* خلفية فاتحة مختلفة عن projects */
+  padding: 80px 0;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  animation: slideInUp 0.8s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  color: #6b7280;
+  line-height: 1.6;
 }
 
 /* Contact Section */
