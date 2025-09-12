@@ -127,3 +127,22 @@ form.addEventListener("submit", (e) => {
   alert("✅ Message sent successfully!");
   form.reset();
 });
+
+
+// // تهيئة EmailJS بمفتاحك
+// (function () {
+//   emailjs.init("YOUR_PUBLIC_KEY"); // استبدل بـ المفتاح بتاعك
+// })();
+
+// // التعامل مع الفورم
+// document.querySelector(".contact-form").addEventListener("submit", function (e) {
+//   e.preventDefault();
+
+//   emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+//     .then(() => {
+//       alert("✅ Message sent successfully!");
+//       this.reset();
+//     }, (err) => {
+//       alert("❌ Failed to send: " + JSON.stringify(err));
+//     });
+// });
