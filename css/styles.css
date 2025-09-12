@@ -304,6 +304,63 @@ section {
 }
 
 /* Projects Section */
+
+.project-image {
+  width: 100%;
+  max-width: 400px; /* عرض أقصى */
+  margin: 20px auto; /* توسيط */
+  overflow: hidden; /* يمنع أي خروج للصورة */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; /* يخليها مظبوطة جوه البلوك */
+  border-radius: 0; /* يتأكد إن مفيش زوايا مدوّرة */
+  cursor: pointer; /* يبين إنها قابلة للضغط */
+  transition: transform 0.3s ease;
+}
+
+.project-image img:hover {
+  transform: scale(1.05); /* تكبير بسيط عند المرور */
+}
+
+/* النافذة (مخفيه في الأول) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* الصورة جوه النافذة */
+.modal-content {
+  display: block;
+  margin: 5% auto;
+  max-width: 90%;
+  max-height: 80%;
+}
+
+/* زر الإغلاق */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close:hover {
+  color: red;
+}
+
 .projects {
   background: white;
 }
@@ -578,6 +635,18 @@ section {
 
 .social-link:hover {
   transform: scale(1.2);
+}
+
+.section-title,
+.skill-card,
+.project-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Animations */
