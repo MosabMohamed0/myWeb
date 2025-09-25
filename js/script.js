@@ -66,25 +66,6 @@ backToTop.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-const counters = document.querySelectorAll(".stat h3");
-
-counters.forEach((counter) => {
-  let target = +counter.innerText.replace(/\D/g, ""); // يشيل الرموز زي %
-  counter.innerText = "0";
-  let updateCount = () => {
-    let current = +counter.innerText;
-    let increment = Math.ceil(target / 50);
-    if (current < target) {
-      counter.innerText =
-        current + increment + (/%$/.test(counter.outerText) ? "%" : "+");
-      setTimeout(updateCount, 40);
-    } else {
-      counter.innerText = counter.outerText; // يرجعه للنص الأصلي
-    }
-  };
-  updateCount();
-});
-
 const revealElements = document.querySelectorAll(
   ".section-title, .skill-card, .project-card"
 );
@@ -127,7 +108,6 @@ form.addEventListener("submit", (e) => {
   alert("✅ Message sent successfully!");
   form.reset();
 });
-
 
 // // تهيئة EmailJS بمفتاحك
 // (function () {
